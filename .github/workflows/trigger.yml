@@ -1,13 +1,13 @@
-name: MSBuild
+name: TriggerTest
 
 on:
   pull_request:
-    types: [opened, edited, reopened]
-  pull_request_review_comment:
+    types: [opened, reopened]
+  pull_request_review:
     types: [edited]
 
 jobs:
-  build:
+  test:
     runs-on: windows-2019
     steps:
       - name: PullRequest Type
