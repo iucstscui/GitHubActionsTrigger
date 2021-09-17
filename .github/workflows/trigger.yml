@@ -2,8 +2,8 @@ name: MSBuild
 
 on:
   pull_request:
-    types: [opened, reopened]
-  pull_request_review:
+    types: [opened, edited, reopened]
+  pull_request_review_comment:
     types: [edited]
 
 jobs:
